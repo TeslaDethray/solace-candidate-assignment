@@ -1,6 +1,6 @@
 import AdvocateType, { SpecialtyType } from './types';
 
-const AdvocateRow = ({ specialties }: { specialties: Array<SpecialtyType>; }) => {
+const Specialties = ({ specialties }: { specialties: Array<SpecialtyType>; }) => {
     if (specialties.length === 0) {
         return null;
     }
@@ -16,4 +16,4 @@ const AdvocateRow = ({ specialties }: { specialties: Array<SpecialtyType>; }) =>
     );
 }
 
-export default AdvocateRow;
+export default Specialties;

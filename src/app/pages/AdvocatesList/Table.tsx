@@ -9,13 +9,15 @@ const TableHead = (props) => (<th className="p-2" {...props} />);
 const Table = ({ advocates }: { advocates: Array<AdvocateType> }) => (
   <TableComponent striped bordered hover>
     <thead>
-      <TableHead>First Name</TableHead>
-      <TableHead>Last Name</TableHead>
-      <TableHead>City</TableHead>
-      <TableHead>Degree</TableHead>
-      <TableHead>Specialties</TableHead>
-      <TableHead>Years of Experience</TableHead>
-      <TableHead>Phone Number</TableHead>
+      <tr>
+        <TableHead>First Name</TableHead>
+        <TableHead>Last Name</TableHead>
+        <TableHead>City</TableHead>
+        <TableHead>Degree</TableHead>
+        <TableHead>Specialties</TableHead>
+        <TableHead>Years of Experience</TableHead>
+        <TableHead>Phone Number</TableHead>
+      </tr>
     </thead>
     <tbody>
       {advocates.map((advocate, index) => (
