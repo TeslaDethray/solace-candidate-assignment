@@ -8,7 +8,7 @@ const TableHead = (props) => (<th className="p-2" {...props} />);
 // TODO: Issue #4 paginate the advocates
 const Table = ({ advocates }: { advocates: Array<AdvocateType> }) => (
   <TableComponent striped bordered hover>
-    <thead>
+    <tr>
       <TableHead>First Name</TableHead>
       <TableHead>Last Name</TableHead>
       <TableHead>City</TableHead>
@@ -16,7 +16,7 @@ const Table = ({ advocates }: { advocates: Array<AdvocateType> }) => (
       <TableHead>Specialties</TableHead>
       <TableHead>Years of Experience</TableHead>
       <TableHead>Phone Number</TableHead>
-    </thead>
+    </tr>
     <tbody>
       {advocates.map((advocate, index) => (
         <TableRow advocate={advocate} key={`advocate_${index}`} />

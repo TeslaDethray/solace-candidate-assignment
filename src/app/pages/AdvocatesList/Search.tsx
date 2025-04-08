@@ -18,7 +18,7 @@ const Search = (
 ) => (
   <Stack direction="horizontal" gap={3}>
     <PaddedDiv className="p-1">
-      <FormLabel for={SEARCH_INPUT_NAME}>Search:</FormLabel>
+      <FormLabel htmlFor={SEARCH_INPUT_NAME}>Search:</FormLabel>
     </PaddedDiv>
     <PaddedDiv className="p-1">
       <FormControl name={SEARCH_INPUT_NAME} onChange={onSearch} rows={1} type="textarea" />
